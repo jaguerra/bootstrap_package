@@ -29,11 +29,17 @@ namespace :db do
     desc "Upload and import SQL dump"
     task :push, :roles => :db, :except => { :no_release => true } do
 
-      	file = "config/media/dump.sql"
-				dest_file = "#{shared_path}/_tmp/dump.sql"
-				run "#{try_sudo} mkdir -p #{shared_path}/_tmp"
+	run "#{try_sudo} mkdir -p #{shared_path}/_tmp"
+        
+	script_file = "scripts/DbImport.php"
+	script_dest_file = "#{shared_path}/_tmp/DbImport.php"
+	top.upload(script_file, script_dest_file)
+
+	file = "config/media/dump.sql"
+	dest_file = "#{shared_path}/_tmp/dump.sql"
       	top.upload(file, dest_file)
-				run "#{try_sudo} php #{current_path}/scripts/DbImport.php #{dest_file}"
+
+	run "#{try_sudo} php #{script_dest_file} #{dest_file}"
 
     end
 end
