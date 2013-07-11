@@ -20,7 +20,10 @@ We wanted not only a package to demonstrate the capability of TYPO3 but also som
 How to install?
 ===============
 
-There are two options, either you can get the **stable version** from http://get.typo3.org/bootstrap or you can follow this little step by step tutorial to get the **master version** - in no time to talk the marketing guy :) ::
+There are two options, either you can get the **stable version** from http://get.typo3.org/bootstrap or you can follow this
+little step by step tutorial to get the **master version** - in no time to talk the marketing guy :) Notice the
+`system requirement`_ before proceeding and make sure PHP 5.3.7 - 5.4.x and MariaDB / MySQL 5.1.x-5.5.x is installed in your
+system::
 
 	# Clone the repository
 	git clone --recursive git://github.com/Ecodev/bootstrap_package.git
@@ -52,6 +55,7 @@ There are two options, either you can get the **stable version** from http://get
 Notice the ``htdocs`` folder located at the root of the direction is not mandatory. It just matches our hosting convention in our company.
 If you want to get rid of it, rename the file structure to your convenience when configuring the Virtual Host.
 
+.. _system requirement: http://wiki.typo3.org/TYPO3_6.1#System_Requirements
 
 Support
 ==================
