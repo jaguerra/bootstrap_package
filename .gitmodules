@@ -43,3 +43,6 @@
 [submodule "htdocs/typo3conf/ext/coreapi"]
 	path = htdocs/typo3conf/ext/coreapi
 	url = https://github.com/etobi/ext-coreapi.git
+[submodule "htdocs/typo3conf/ext/infinite_scroll_gallery"]
+	path = htdocs/typo3conf/ext/infinite_scroll_gallery
+	url = https://github.com/Ecodev/infinite_scroll_gallery.git
