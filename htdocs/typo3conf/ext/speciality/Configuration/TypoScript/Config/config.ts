@@ -10,23 +10,6 @@ config {
 	# ignore: the system will stay with the selected language even if the page is not translated
 	sys_language_mode = ignore
 
-	# All javascript (includes and inline) will be moved to the bottom of the html document
-	moveJsFromHeaderToFooter = 0
-
-	# If set, the default JavaScript in the header will be removed (blurLink function and browser detection variables)
-	removeDefaultJS = 1
-
-	# If set inline or externalized (see removeDefaultJS above) JavaScript will be minified.
-	# Minification will remove all excess space and cause faster page loading.
-	minifyJS = 1
-
-	#
-	minifyCss = 0
-
-	#
-	concatenateJsAndCss = 0
-
-	# All javascript (includes and inline) will be moved to the bottom of the html document
 	# Records that are not localized till be hidden
 	# Possible value hideNonTranslated | int (the sys_language)
 	sys_language_overlay = hideNonTranslated
