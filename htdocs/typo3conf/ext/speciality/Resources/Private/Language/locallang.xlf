@@ -7,10 +7,10 @@
 
 			<!-- carousel widget -->
 			<trans-unit id="flux.carouselWidget">
-				<source>Bootstrap: Carousel gallery</source>
+				<source>Media: carousel gallery</source>
 			</trans-unit>
 			<trans-unit id="flux.carouselWidget.description">
-				<source>Display a configurable carousel gallery</source>
+				<source>Display a configurable carousel gallery where images come from the Media module.</source>
 			</trans-unit>
 			<trans-unit id="flux.carouselWidget.fields.categories">
 				<source>Categories of images (comma separated values)</source>
