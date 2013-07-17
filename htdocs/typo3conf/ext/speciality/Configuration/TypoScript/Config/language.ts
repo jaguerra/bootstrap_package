@@ -10,13 +10,6 @@ config {
 	language = en
 	locale_all = en_GB.UTF-8
 	htmlTag_langKey = en_GB
-
-	# How to handle localization
-	sys_language_mode = content_fallback
-
-	# Records that are not localized till be hidden
-	# Possible value hideNonTranslated | int (the sys_language)
-	sys_language_overlay = hideNonTranslated
 }
 
 [globalVar = GP:L = 1]

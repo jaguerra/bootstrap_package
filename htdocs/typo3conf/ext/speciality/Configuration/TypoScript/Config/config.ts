@@ -4,11 +4,11 @@
 
 config {
 
-	# If set, the stdWrap property “prefixComment” will be disabled, thus preventing any revealing and space-consuming comments in the HTML source code.
-	disablePrefixComment = 1
-
-	# If set, the inline styles TYPO3 controls in the core are written to a file
-	inlineStyle2TempFile = 1
+	# How to handle localization, possible values:
+	# content_fallback: the system will always operate with the selected language even if the page is not translated with a page overlay record.
+	# strict: the system will report an error if the requested translation does not exist
+	# ignore: the system will stay with the selected language even if the page is not translated
+	sys_language_mode = ignore
 
 	# All javascript (includes and inline) will be moved to the bottom of the html document
 	moveJsFromHeaderToFooter = 0
@@ -25,6 +25,17 @@ config {
 
 	#
 	concatenateJsAndCss = 0
+
+	# All javascript (includes and inline) will be moved to the bottom of the html document
+	# Records that are not localized till be hidden
+	# Possible value hideNonTranslated | int (the sys_language)
+	sys_language_overlay = hideNonTranslated
+
+	# If set, the stdWrap property “prefixComment” will be disabled, thus preventing any revealing and space-consuming comments in the HTML source code.
+	disablePrefixComment = 1
+
+	# If set, the inline styles TYPO3 controls in the core are written to a file
+	inlineStyle2TempFile = 1
 
 	# Add L and print values to all links in TYPO3.
 	linkVars = L, print
