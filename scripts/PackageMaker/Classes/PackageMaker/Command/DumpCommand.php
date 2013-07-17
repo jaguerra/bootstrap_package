@@ -106,10 +106,11 @@ class DumpCommand extends AbstractCommand {
 		}
 
 		// Remove record with flag delete = 0
-
 		$tables = array(
 			'tt_content',
 			'pages',
+			'sys_file',
+			'sys_file_reference',
 		);
 
 		foreach ($tables as $table) {
