@@ -22,6 +22,7 @@ class ExtensionUtility {
 		'speciality',
 		'nc_staticfilecache',
 		'vhs',
+		'infinite_scroll_gallery',
 		'wt_spamshield'
 	);
 
