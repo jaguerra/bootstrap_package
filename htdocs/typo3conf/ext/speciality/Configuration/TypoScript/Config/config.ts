@@ -8,11 +8,13 @@ config {
 	# content_fallback: the system will always operate with the selected language even if the page is not translated with a page overlay record.
 	# strict: the system will report an error if the requested translation does not exist
 	# ignore: the system will stay with the selected language even if the page is not translated
-	sys_language_mode = ignore
+	# @todo fix me! it looks the setting is not taken into account with latest version of fedext
+	# sys_language_mode = content_fallback
 
 	# Records that are not localized till be hidden
 	# Possible value hideNonTranslated | int (the sys_language)
-	sys_language_overlay = hideNonTranslated
+	# @todo fix me! it looks the setting is not taken into account with latest version of fedext
+	#sys_language_overlay = hideNonTranslated
 
 	# If set, the stdWrap property “prefixComment” will be disabled, thus preventing any revealing and space-consuming comments in the HTML source code.
 	disablePrefixComment = 1
