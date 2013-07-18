@@ -23,12 +23,11 @@
 
 			<!-- sitemap-->
 			<div class="row-fluid">
-				<v:page.menu entryLevel="0" levels="2" includeSpacers="FALSE" expandAll="TRUE"
-				             useShortcutTarget="TRUE">
+				<v:page.menu entryLevel="0" levels="2" includeSpacers="FALSE" expandAll="TRUE">
 					<f:if condition="{menu}">
 
 						<f:for each="{menu}" as="menuPage" iteration="iteration">
-							<div class="span3">
+							<div class="span2">
 								<ul class="unstyled">
 									<li class="{menuPage.class}">
 										<a href="{menuPage.link}" class="{menuPage.class}">
@@ -37,8 +36,7 @@
 									</li>
 
 									<!-- Sub menu -->
-									<v:page.menu pageUid="{menuPage.uid}" includeSpacers="FALSE" expandAll="TRUE"
-									             useShortcutTarget="TRUE">
+									<v:page.menu pageUid="{menuPage.uid}" includeSpacers="FALSE" expandAll="TRUE">
 										<f:if condition="{menu}">
 											<f:for each="{menu}" as="subMenuPage" iteration="subIteration">
 												<li class="{subMenuPage.class}">
