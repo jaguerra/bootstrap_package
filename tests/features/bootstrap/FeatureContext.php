@@ -25,16 +25,30 @@ class FeatureContext extends MinkContext {
 	}
 
 	/**
-	 * @Given /^I select the "([^"]*)" radio button$/
+	 * @Then /^I should access all pages of site map "([^"]*)"$/
 	 */
-	public function iSelectTheRadioButton($radio_label) {
-		$radio_button = $this->getSession()->getPage()->findField($radio_label);
-		if (null === $radio_button) {
-			throw new ElementNotFoundException(
-				$this->getSession(), 'form field', 'id|name|label|value', $field);
+	public function iShouldAccessAllPagesOfSiteMap($selector) {
+
+		$page = $this->getSession()->getPage();
+		$locator = sprintf('#%s a', $selector);
+		$elements = $page->findAll('css', $locator);
+
+		$steps = array();
+		foreach ($elements as $element) {
+			/** @var \Behat\Mink\Element\NodeElement $element */
+			$steps[] = new Behat\Behat\Context\Step\When(sprintf('I print out page "%s"', $element->getAttribute('href')));
+			$steps[] = new Behat\Behat\Context\Step\When(sprintf('I go to "%s"', $element->getAttribute('href')));
+			$steps[] = new Behat\Behat\Context\Step\Then('the response status code should be 200');
 		}
-		$value = $radio_button->getAttribute('value');
-		$this->fillField($radio_label, $value);
+		return $steps;
+	}
+
+	/**
+	 * @When /^I print out page "([^"]*)"$/
+	 */
+	public function iPrintOutThePage($page) {
+		$string = sprintf('Visiting page ' . $page);
+		echo "\033[36m    ->  " . strtr($string, array("\n" => "\n|  ")) . "\033[0m\n";
 	}
 
 	/**

@@ -7,10 +7,9 @@ Feature: Base Feature
     Given I am on "/"
     Then I should see "Congratulations, you have successfully installed TYPO3"
 
-  # @todo read pages from sitemap and check their code status + main column is not empty
   Scenario: Page "/examples/site-map/" has relevant content
     Given I am on "/examples/site-map/"
-    Then I should see "Dynamic Site Maps"
+    Then I should access all pages of site map "c118"
 
   Scenario: Page "/examples-extended/news/" has relevant content
     Given I am on "/examples-extended/news/"
@@ -21,7 +20,6 @@ Feature: Base Feature
     And I follow "TYPO3 - An idea is born"
     Then I should be on "/examples-extended/news/d/article/typo3-an-idea-is-born/"
     And I should see "TYPO3 - An idea is born"
-
 
   Scenario: Click go back link in detail view and check whether it goes to list view of News
     Given I am on "/examples-extended/news/d/article/typo3-an-idea-is-born/"
