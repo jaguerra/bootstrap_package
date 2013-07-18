@@ -24,19 +24,19 @@
 	url = git://git.typo3.org/TYPO3v4/Extensions/realurl.git
 [submodule "htdocs/typo3conf/ext/seo_basics"]
 	path = htdocs/typo3conf/ext/seo_basics
-	url = git://git.typo3.org/TYPO3v4/Extensions/seo_basics.git
+	url = https://github.com/b13/t3ext-seo_basics.git
 [submodule "htdocs/typo3conf/ext/jquerycolorbox"]
 	path = htdocs/typo3conf/ext/jquerycolorbox
 	url = git://github.com/Ecodev/jquerycolorbox.git
 [submodule "htdocs/typo3conf/ext/wt_spamshield"]
 	path = htdocs/typo3conf/ext/wt_spamshield
-	url = git://github.com/TYPO3-Extensions/wt_spamshield.git
+	url = git://git.typo3.org/TYPO3v4/Extensions/wt_spamshield.git
 [submodule "htdocs/typo3conf/ext/metadata"]
 	path = htdocs/typo3conf/ext/metadata
 	url = git://git.typo3.org/TYPO3v4/Extensions/metadata.git
 [submodule "htdocs/typo3conf/ext/nc_staticfilecache"]
 	path = htdocs/typo3conf/ext/nc_staticfilecache
-	url = git://github.com/TYPO3-Extensions/nc_staticfilecache.git
+	url = git://github.com/TYPO3-svn-archive/nc_staticfilecache.git
 [submodule "htdocs/typo3_src"]
 	path = htdocs/typo3_src
 	url = git://git.typo3.org/Packages/TYPO3.CMS.git
