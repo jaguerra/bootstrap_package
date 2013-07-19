@@ -116,37 +116,10 @@ It is still possible to load a static configuration file from a Template record 
 
 .. _blog post: http://blog.causal.ch/2012/05/automatically-including-static-ts-from.html
 
-Application Context API
-------------------------
-
-A thin API has also been introduced for handling Application Context. An Application Context tells whether the applications runs in development, production or whatever.
-A default context has been defined as "Development". For now it does nothing particular but can be used in Extension to decide how to behaves according
-to the context. A good example is about sending email in a development context. It is likely to send email to a debug recipient while in debug mode.
-
-A Context can be get like::
-
-	if (\TYPO3\CMS\Speciality\Utility\Context::getInstance()->isProduction()) {
-		// do something
-	}
-
-	# Display the context name
-	var_dump(\TYPO3\CMS\Speciality\Utility\Context::getInstance()->getName());
-
-A Context can be be set in the Extension Manager when configuring ``EXT:speciality`` where a value is to be picked among value Development, Production or Testing. Adding a custom context is as easy as adding a value into file ``EXT:speciality/ext_conf_template.txt``. It can also be defined by the mean of an environment variable which will have the priority if existing. For example, one can put in .htaccess::
-
-	SetEnv TYPO3_CONTEXT Production
-
-Hopefully, this feature will be handled by the Core `at one point`_ like TYPO3 Flow `has`_.
-One thing that is still missing is a patch adding the support of TypoScript condition for a Context::
-
-	[context = Foo]
-	[end]
-
-.. _at one point: http://forge.typo3.org/issues/39441
-.. _has: http://docs.typo3.org/flow/TYPO3FlowDocumentation/TheDefinitiveGuide/PartIII/Bootstrapping.html
-
-Override configuration for development
+Override configuration in Context
 ---------------------------------------
+
+@todo this section is obsolete and must rewritten after this patch has landed http://forge.typo3.org/issues/50131
 
 While developing on its local machine, it might be interesting to override default values of the live website.
 A good example, is the domain name for instance which will be different than the one in production.
@@ -165,7 +138,7 @@ Tip for development
 ---------------------
 
 * TYPO3 has many levels of caches. While it is good for performance, it will become very annoying in development mode. Check out the `uncache extension`_ to work around.
-* For new TYPO3 developers which are starting with extension development head to the `extension builder`_.
+* For new TYPO3 developers which are starting with extension development take advantage of the `extension builder`_.
 
 .. _uncache extension: https://github.com/NamelessCoder/uncache
 .. _extension builder: https://forge.typo3.org/projects/show/extension-extension_builder

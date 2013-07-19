@@ -21,12 +21,14 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tstemplate.php']['i
 ));
 
 # Development configuration (override default configuration)
-$developmentConfigurationFile = sprintf('%s/Configuration/%s/DefaultConfiguration.php',
-	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY),
-	\TYPO3\CMS\Speciality\Utility\Context::getInstance()->getName()
-);
-
-if (file_exists($developmentConfigurationFile)) {
-	include_once($developmentConfigurationFile);
-}
+# @todo adapt code for 6.2 after we have Context in the Core http://forge.typo3.org/issues/49988
+# @todo adapt Readme.rst
+//$developmentConfigurationFile = sprintf('%s/Configuration/%s/DefaultConfiguration.php',
+//	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY),
+//	\TYPO3\CMS\Speciality\Utility\Context::getInstance()->getName()
+//);
+//
+//if (file_exists($developmentConfigurationFile)) {
+//	include_once($developmentConfigurationFile);
+//}
 ?>

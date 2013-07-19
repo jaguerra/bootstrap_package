@@ -85,7 +85,7 @@ class ConfigurationTest extends \TYPO3\CMS\Extbase\Tests\Unit\BaseTestCase {
 	 */
 	public function configurationProvider() {
 		return array(
-			array('context'),
+			#array('bar'),
 		);
 	}
 }

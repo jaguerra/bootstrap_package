@@ -54,7 +54,7 @@ class Configuration {
 	 * @var array
 	 */
 	protected $defaultSettings = array(
-		'context' => 'Development',
+		 #'foo' => 'bar',
 	);
 
 	/**
