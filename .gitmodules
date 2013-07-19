@@ -24,7 +24,7 @@
 	url = git://git.typo3.org/TYPO3v4/Extensions/realurl.git
 [submodule "htdocs/typo3conf/ext/seo_basics"]
 	path = htdocs/typo3conf/ext/seo_basics
-	url = https://github.com/b13/t3ext-seo_basics.git
+	url = https://github.com/fudriot/t3ext-seo_basics.git
 [submodule "htdocs/typo3conf/ext/jquerycolorbox"]
 	path = htdocs/typo3conf/ext/jquerycolorbox
 	url = git://github.com/Ecodev/jquerycolorbox.git
