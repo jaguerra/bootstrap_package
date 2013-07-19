@@ -16,3 +16,7 @@ Feature: Base Feature
     And I press "Continue"
     And I press "Go to your Website"
     Then I should see "Congratulations, you have successfully installed TYPO3"
+
+  Scenario: website has valid links
+    Given I am on "/examples/site-map/"
+    Then I should access all pages of site map "c118"
