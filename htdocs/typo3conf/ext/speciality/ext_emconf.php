@@ -11,7 +11,7 @@
  ***************************************************************/
 
 $EM_CONF[$_EXTKEY] = array(
-	'title' => 'Collection of configuration / template for this website.',
+	'title' => 'Collection of configuration / templates for this website.',
 	'description' => 'An extension providing a set configuration for this website. Everyone is special... isn\'t it?',
 	'author' => 'Fabien Udriot',
 	'author_email' => 'support@ecodev.ch',
@@ -32,7 +32,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'version' => '1.1.1',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '6.1.1-0.0.0',
+			'typo3' => '6.1.1-6.1.99',
 			'fluidcontent' => '',
 			'fluidpages' => '',
 			'cms' => '',
