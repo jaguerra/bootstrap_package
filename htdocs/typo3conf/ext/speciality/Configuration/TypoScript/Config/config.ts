@@ -22,9 +22,6 @@ config {
 	# If set, the inline styles TYPO3 controls in the core are written to a file
 	inlineStyle2TempFile = 1
 
-	# Add L and print values to all links in TYPO3.
-	linkVars = L, print
-
 	# Charset, should always be utf-8
 	renderCharset = utf-8
 
