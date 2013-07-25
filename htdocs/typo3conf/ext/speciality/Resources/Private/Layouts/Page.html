@@ -6,13 +6,13 @@
 		<h1>Hello world!</h1>
 
 	<v:page.header>
-		<f:render section="Resources" optional="TRUE" arguments="{_all}"/>
+		<f:render section="Resources" optional="true" arguments="{_all}"/>
 	</v:page.header>
 
 	<f:render section="Navigation" partial="Navigation" arguments="{_all}"/>
 
 	<div class="container">
-		<v:security.allow anyBackendUser="TRUE">
+		<v:security.allow anyBackendUser="true">
 			<div class="alert alert-success">
 				<hgroup>
 					<h1 class="alert-header">You are logged in the Backend</h1>
@@ -32,19 +32,19 @@
 		</v:security.allow>
 	</div>
 	<div class="container">
-		<f:render section="LanguageMenu" partial="LanguageMenu" optional="TRUE" arguments="{_all}"/>
-		<f:render section="Header" partial="Header" optional="TRUE" arguments="{_all}"/>
-		<f:render section="Breadcrumb" partial="Breadcrumb" optional="TRUE" arguments="{_all}"/>
-		<!-- f:render section="SubNavigation" partial="SubNavigation"  optional="TRUE" arguments="{_all}" / -->
-		<f:render section="HeroUnit" partial="HeroUnit" optional="TRUE" arguments="{_all}"/>
-		<f:render section="TabNavigation" partial="TabNavigation" optional="TRUE" arguments="{_all}"/>
+		<f:render section="LanguageMenu" partial="LanguageMenu" optional="true" arguments="{_all}"/>
+		<f:render section="Header" partial="Header" optional="true" arguments="{_all}"/>
+		<f:render section="Breadcrumb" partial="Breadcrumb" optional="true" arguments="{_all}"/>
+		<!-- f:render section="SubNavigation" partial="SubNavigation"  optional="true" arguments="{_all}" / -->
+		<f:render section="HeroUnit" partial="HeroUnit" optional="true" arguments="{_all}"/>
+		<f:render section="TabNavigation" partial="TabNavigation" optional="true" arguments="{_all}"/>
 
 		<!--TYPO3SEARCH_begin-->
 		<f:render section="Content"/>
 		<!--TYPO3SEARCH_end-->
 
 		<f:if condition="{v:var.typoscript(path: 'lib.disqus.display')}">
-			<f:render section="Disqus" partial="Disqus" optional="TRUE" arguments="{_all}"/>
+			<f:render section="Disqus" partial="Disqus" optional="true" arguments="{_all}"/>
 		</f:if>
 		<f:render section="Footer" partial="Footer"/>
 	</div>
