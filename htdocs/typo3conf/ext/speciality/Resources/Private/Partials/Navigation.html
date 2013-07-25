@@ -34,13 +34,8 @@
 							</ul>
 						</v:page.menu>
 
-						<form class="navbar-form pull-right" role="search">
-							<div class="input-prepend">
-								<span class="add-on"><i class="icon-search"></i></span>
-								<input class="span2 input-nav" type="text"
-								       placeholder="Search (not implemented yet)">
-							</div>
-						</form>
+						<f:render section="SearchForm" partial="SearchForm" optional="true" arguments="{_all}"/>
+
 					</div>
 					<!--/.nav-collapse -->
 				</div>

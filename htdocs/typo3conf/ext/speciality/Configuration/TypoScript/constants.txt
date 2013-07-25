@@ -11,7 +11,7 @@ config {
 	rootPid = 1
 
 	# cat=site-configuration/content/0150; type=int; label= Enable the Index Search extension
-	index_enable = 0
+	index_enable = 1
 
 	# cat=site-configuration/content/0151; type=int; label= Enable the Index Search extension to index file
 	index_externals = 0
