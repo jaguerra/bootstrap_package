@@ -2,6 +2,10 @@
 	$(function () {
 		$(document).ready(function () {
 
+			/**
+			 * Activate light box for EXT:news.
+			 */
+			$('a[rel*="lightbox"]').colorbox();
 
 			/**
 			 * Activate TB tooltip which must be done explicitly since this is an opt-in plugin.
