@@ -384,3 +384,27 @@ div[role=main] h6 {
 .anchor .icon {
 	text-decoration: none;
 }
+
+/* Search result pagination from indexed_search plugin */
+ul.browsebox{
+	margin : 0px 0px 10px 0px;
+}
+
+ul.browsebox li {
+	display: inline;
+	padding-right: 10px;
+}
+
+.tx-indexedsearch-descr {
+	text-align: justify;
+}
+
+.tx-indexedsearch-browsebox,
+.tx-indexedsearch-percent {
+	font-size: 90%;
+	color: #777777;
+}
+
+.tx-indexedsearch-whatis {
+	display: none;
+}
