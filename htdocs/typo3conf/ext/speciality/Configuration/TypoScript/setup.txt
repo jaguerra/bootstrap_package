@@ -28,8 +28,3 @@
 ## Page
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:speciality/Configuration/TypoScript/Page/header.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:speciality/Configuration/TypoScript/Page/page.ts">
-
-# @todo remove me when solving https://github.com/FluidTYPO3/fluidpages/issues/76
-# Previous value was {page.uid} in file EXT:speciality/Resources/Private/Partials/Header.html
-lib.pageUid = TEXT
-lib.pageUid.data = page:uid
